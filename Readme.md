@@ -8,7 +8,7 @@ Welcome to my meal planner web app repository! Having following the full stack d
 
 2. The data would be stored in arrays in a simple javascript file containing the following datas :
     - Name of Meal (String)
-    - Ingredients Needed (String)
+    - Description (String)
     - Link of Recipe (String)
     - Image of the Meal (URL)
 
