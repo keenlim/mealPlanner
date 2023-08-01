@@ -1,4 +1,4 @@
-export const allmeals = [
+const allmeals = [
     {
       "id": 0,
       "Name": "Miso-Butter Roast Chicken With Acorn Squash Panzanella",
@@ -5000,3 +5000,5 @@ export const allmeals = [
       "Image_name": "sunday-stash-sweet-potatoes"
     }
   ]
+
+  module.exports = allmeals;
