@@ -15,6 +15,9 @@ Welcome to my meal planner web app repository! Having following the full stack d
 3. Create a function that picks five meals at random, one for each day of the week, and sends them to the index.html section where it will display to the users. 
 
 ### Tech Stack 
+<p>
 <img alt = "Javascript" src = "https://img.shields.io/badge/Javascript-F7DF1E?logo=javascript&logoColor=black&style=flat"/>
 <img alt = "HTML" src = "https://img.shields.io/badge/HTML-E34F26?logo=html5&logoColor=black&style=flat"/>
 <img alt = "CSS" src = "https://img.shields.io/badge/CSS-1572B6?logo=css&logoColor=black&style=flat"/>
+<img alt = "React" src = "https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black&style=flat"/>
+</p>
