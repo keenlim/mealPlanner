@@ -1,0 +1,2 @@
+### GET data
+GET http://localhost:3000/
