@@ -33,7 +33,7 @@ const Home = () => {
             {data.map(items => 
                 <div>
                    <div className="card" style={{width: "18rem"}}>
-                        <img src="../Backend/Data/Food Images/olive-oil-apple-cake-with-spiced-sugar" className="card-img-top" alt="..."/>
+                        <img src="../frontend/src/FoodImages/3-ingredient-tomato-soup.jpg" className="card-img-top" alt="..."/>
                         <div className="card-body">
                             <p className="card-text">{items.Name}</p>
                         </div>
