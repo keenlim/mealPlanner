@@ -1,5 +1,5 @@
 ### GET data
-GET http://localhost:3000/
+GET http://localhost:5000/
 
 ### GET data
-GET http://localhost:3000/generateMeal
+GET http://localhost:5000/generateMeal

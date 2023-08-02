@@ -1,17 +1,20 @@
 import React from 'react';
 import {useState, useEffect} from 'react';
+import axios from "axios";
 
 const Home = () => {
+    
+    const [data, setData] = useState([]);
 
-    const [data, setData] = useState({});
-    const HandleClick = () => {
-        //alert('Button have been clicked');
-        useEffect(() => {
-            fetch("/home")
-            .then(res => res.json())
-            .then(data => setData(data))
-        }, []);
+    const getData = () => {
+        //alert("HELLO World")
+        axios.get("http://localhost:5000/generateMeal", {
+            crossdomain: true
+        }).then(response => {
+            setData(response.data);
+        });
 
+        console.log(data);
     }
     return(
         <div className = "position-relative">
@@ -23,9 +26,22 @@ const Home = () => {
             </div>
 
             <div className =  "position-absolute start-50 translate-middle mt-4 pt-5">
-                <button type="button" className="btn btn-primary btn-lg" onClick = {HandleClick}>Meals Generator</button>
+                <button type="button" className="btn btn-primary btn-lg" onClick = {getData}>Meals Generator</button>
             </div>
-            <h1>{data.name}</h1>
+
+            <div>
+            {data.map(items => 
+                <div>
+                   <div className="card" style={{width: "18rem"}}>
+                        <img src="../Backend/Data/Food Images/olive-oil-apple-cake-with-spiced-sugar" className="card-img-top" alt="..."/>
+                        <div className="card-body">
+                            <p className="card-text">{items.Name}</p>
+                        </div>
+                    </div>
+                </div>)}
+
+            </div>
+            
             
         </div>
         
