@@ -1,10 +1,16 @@
 import React from 'react';
 import {useState, useEffect} from 'react';
 
-const home = () => {
-    const [data, setData] = useState([]);
-    const handleClick = () => {
-        alert('Button have been clicked');
+const Home = () => {
+
+    const [data, setData] = useState({});
+    const HandleClick = () => {
+        //alert('Button have been clicked');
+        useEffect(() => {
+            fetch("/home")
+            .then(res => res.json())
+            .then(data => setData(data))
+        }, []);
 
     }
     return(
@@ -17,12 +23,13 @@ const home = () => {
             </div>
 
             <div className =  "position-absolute start-50 translate-middle mt-4 pt-5">
-                <button type="button" className="btn btn-primary btn-lg" onClick = {handleClick}>Meals Generator</button>
+                <button type="button" className="btn btn-primary btn-lg" onClick = {HandleClick}>Meals Generator</button>
             </div>
+            <h1>{data.name}</h1>
             
         </div>
         
     )
 }
 
-export default home;
+export default Home;
