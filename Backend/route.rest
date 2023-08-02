@@ -1,5 +1,5 @@
 ### GET data
 GET http://localhost:3000/
 
-### POST data
-POST http://localhost:3000/generateMeal
+### GET data
+GET http://localhost:3000/generateMeal
