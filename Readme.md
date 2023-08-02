@@ -21,3 +21,25 @@ Welcome to my meal planner web app repository! Having following the full stack d
 <img alt = "CSS" src = "https://img.shields.io/badge/CSS-1572B6?logo=css&logoColor=black&style=flat"/>
 <img alt = "React" src = "https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black&style=flat"/>
 </p>
+
+## Getting Started with My React and Node.js Web Application
+Before you get started, you will need to have the following installed on your machine: 
+- Node.js
+- Git
+
+### Installation
+To download the application, you will need to follow these steps: 
+1. Open your terminal or command prompt
+2. Navigate to the directory where you want to store your application
+3. Clone the repository using the following command: 
+```
+git clone 
+```
+4. Navigate to the project directory 
+5. Install the dependencies by navigating to the frontend folder and running the following command: 
+```
+npm install
+```
+6. Once you have installed dependencies, you can run the application by: 
+- Navigate to the frontend folder and start the application by typing ```npm start```
+- Then navigate to the backend folder and start the application by typing ```node app.js```
