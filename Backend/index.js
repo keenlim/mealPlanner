@@ -5,7 +5,11 @@ app.use(express.json());
 const {mealGenerator} = require('./routes/mealGenerator');
 const port = 3000;
 
-app.get('/', (req, res) => {
+app.get('/',(req,res) => {
+  res.send("Hello World");
+})
+
+app.post('/generateMeal', (req, res) => {
   let array = mealGenerator();
   res.send(array);
 });
