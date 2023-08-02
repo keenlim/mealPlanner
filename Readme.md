@@ -33,7 +33,7 @@ To download the application, you will need to follow these steps:
 2. Navigate to the directory where you want to store your application
 3. Clone the repository using the following command: 
 ```
-git clone 
+git clone https://github.com/keenlim/mealPlanner.git
 ```
 4. Navigate to the project directory 
 5. Install the dependencies by navigating to the frontend folder and running the following command: 
